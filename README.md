@@ -4,7 +4,7 @@ In this assignment, you are required to write some test cases for the stateful s
 Write positive test cases to ensure that the smart contract works in the intended way and negative test cases to ensure transactions are rejected if they do fail the logic checks within the contract.
 
 ## Positive test cases
-Write test cases to cover these scenarios,
+Complete the code in `test/success_flow.js`. Write test cases to cover these scenarios,
 
 ### Deploys game contract successfully 
 1. Initial monster health is same as the value specified during deployment.
@@ -22,7 +22,7 @@ Write test cases to cover these scenarios,
 1. MVP player receives the reward.
 
 ## Negative test cases
-Write test cases to cover these scenarios,
+Complete the code in `test/negative_tests.js`. Write test cases to cover these scenarios,
 
 1. Initialize monster with < 5 Health fails.
 2. Double opt in fails.
@@ -41,10 +41,10 @@ yarn run algob test
 ## Hints
 The testing module in AlgoBuilder uses a npm module called chai. Refer to the following links for API documentation and guides.
 
-[Example Projects with Test Cases](https://github.com/scale-it/algo-builder/tree/master/examples)
-[Algo Builder Testing Guide](https://algobuilder.dev/guide/testing-teal.html)
-[Algo Builder Runtime API](https://algobuilder.dev/api/runtime/)
-[Chai](https://www.chaijs.com/api/)
+1. [Example Projects with Test Cases](https://github.com/scale-it/algo-builder/tree/master/examples)
+2. [Algo Builder Testing Guide](https://algobuilder.dev/guide/testing-teal.html)
+3. [Algo Builder Runtime API](https://algobuilder.dev/api/runtime/)
+4. [Chai Module](https://www.chaijs.com/api/)
 
 ## Setup instructions
 
