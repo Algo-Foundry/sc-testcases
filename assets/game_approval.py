@@ -62,6 +62,7 @@ def game():
     mvp = App.globalGet(Bytes("Mvp"))
     reward_player = Seq([
         Assert(currentMonsterHealth <= Int(0)),
+        Assert(Txn.sender() == Global.creator_address()),
         Assert(Txn.accounts[1] == mvp),
         InnerTxnBuilder.Begin(),
         InnerTxnBuilder.SetFields({
