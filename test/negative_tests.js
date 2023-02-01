@@ -98,8 +98,10 @@ describe("Stateful Smart Contract Negative Tests", function () {
         // do opt in
         commonfn.optIn(runtime, player.account, appID);
 
-        // attack
-        commonfn.attack(runtime, player.account, appID);
+        // attack 3 times
+        for (let i = 0; i < 3; i++) {
+            commonfn.attack(runtime, player.account, appID);
+        }
 
         // reward the wrong player
         assert.throws(() => { commonfn.rewardPlayer(runtime, master.account, player2.address, appID) }, RUNTIME_ERR1009);
